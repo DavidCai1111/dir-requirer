@@ -1,7 +1,7 @@
 {
-  "name": "dirRequirer",
+  "name": "dir-requirer",
   "version": "1.0.0",
-  "description": "",
+  "description": "dir-requirer",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,13 +10,15 @@
     "type": "git",
     "url": "https://github.com/DavidCai1993/dirRequirer.git"
   },
-  "author": "",
+  "author": "DavidCai1993",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DavidCai1993/dirRequirer/issues"
+    "url": "https://github.com/DavidCai1993/dir-requirer/issues"
   },
-  "homepage": "https://github.com/DavidCai1993/dirRequirer",
-  "dependencies": {
-    "fs-extra": "^0.18.0"
+  "homepage": "https://github.com/DavidCai1993/dir-requirer",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "should": "^5.2.0"
   }
 }
