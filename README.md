@@ -18,7 +18,7 @@ dir-requirer是一个对nodejs自身的require方法的封装，使用它可以�
          |-- c.json
 ```	
 
-```
+```js
 var dr = require('dir-requirer')(__dirname);
 var myDir = dr('./dir');
 myDir.inner.e //调用e.js中exports出的方法/对象,相当于myDir.inner.e = require('./dir/inner/e');
@@ -67,16 +67,16 @@ __options可选属性:__
 
 ###例子：
 
-```
-	var myDir = dr('./dir');
-	//myDir对象将会拥有与'./dir'目录相同的结构,可以直接调用 myDir.a (即a.js文件exports出的对象/方法) , 
-	//myDir.c , myDir.inner.e , myDir.inner.inner2.d 
-	var myDir = dr('./dir',{ext:['.json']});
-    //将只会require目录下的所有json文件,如 myDir.inner.inner2.d , myDir.c 
-    var myDir = dr('./dir',{dirBlackList:['.inner2']});
-    //将不会require在inner2目录下的所有文件(包括子目录)
-    var myDir = dr('./dir',{dirBlackList:['.inner'],fileBlackList:['.c.json']});
-    //将不会require在inner目录下的所有文件(包括子目录),以及名为c.json的单独文件
+```js
+var myDir = dr('./dir');
+//myDir对象将会拥有与'./dir'目录相同的结构,可以直接调用 myDir.a (即a.js文件exports出的对象/方法) , 
+//myDir.c , myDir.inner.e , myDir.inner.inner2.d 
+var myDir = dr('./dir',{ext:['.json']});
+//将只会require目录下的所有json文件,如 myDir.inner.inner2.d , myDir.c 
+var myDir = dr('./dir',{dirBlackList:['.inner2']});
+//将不会require在inner2目录下的所有文件(包括子目录)
+var myDir = dr('./dir',{dirBlackList:['.inner'],fileBlackList:['.c.json']});
+//将不会require在inner目录下的所有文件(包括子目录),以及名为c.json的单独文件
 ```
 
 
