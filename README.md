@@ -27,13 +27,13 @@ cJson = myDir.c//也可以调用json文件
 
 ## 安装
 
-###通过NPM即可安装使用:
+### 通过NPM即可安装使用:
 
 ```bash
 $ npm install dir-requirer
 ```
 
-###调用:
+### 调用:
 
 ```js
 var dr = require('dir-requirer')(__dirname);
@@ -52,7 +52,7 @@ var dr = require('dir-requirer')(__dirname);
          |-- c.json
 ```	
 
-### dr(path,options);
+### dr(path,options)
 
 __参数：__
 
@@ -65,7 +65,7 @@ __options可选属性:__
 * `dirBlackList(Array)` - 不导入指定目录名下的所有文件,如['inner2']，默认为[]
 * `fileBlackList(Array)` - 不导入指定文件，如['4.js'],默认为[]
 
-###例子：
+### 例子：
 
 ```js
 var myDir = dr('./dir')
