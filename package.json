@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/DavidCai1993/dir-requirer/issues"
   },
+  "scripts": {
+    "test-travis": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly"
+  },
   "homepage": "https://github.com/DavidCai1993/dir-requirer",
   "dependencies": {},
   "devDependencies": {
