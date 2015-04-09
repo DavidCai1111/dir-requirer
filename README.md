@@ -68,7 +68,7 @@ __options可选属性:__
 ###例子：
 
 ```js
-var myDir = dr('./dir');
+var myDir = dr('./dir')
 //myDir对象将会拥有与'./dir'目录相同的结构,可以直接调用 myDir.a (即a.js文件exports出的对象/方法) , 
 //myDir.c , myDir.inner.e , myDir.inner.inner2.d 
 var myDir = dr('./dir',{ext:['.json']});
