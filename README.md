@@ -52,7 +52,6 @@ var dr = require('dir-requirer')(__dirname);
          |-- c.json
 ```	
 
-### var dr = require('dir-requirer')(__dirname);
 ### dr(path,options)
 
 __参数：__
@@ -64,7 +63,7 @@ __options可选属性:__
 
 * `ext(Array)` - 只导入指定扩展名的文件，如['.json'],默认为['.js','.json','.node'] 
 * `dirBlackList(Array)` - 不导入指定目录名下的所有文件,如['inner2']，默认为[]
-* `fileBlackList(Array)` - 不导入指定文件，如['4.js'],默认为[]
+* `fileBlackList(Array)` - 不导入指定文件，如['e.js'],默认为[]
 
 ### 例子：
 
