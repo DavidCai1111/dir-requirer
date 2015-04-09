@@ -1,11 +1,8 @@
 {
   "name": "dir-requirer",
-  "version": "1.0.1",
-  "description": "小工具：一条命令直接require一个目录下的所有文件",
+  "version": "1.0.2",
+  "description": "require指定目录下的所有文件，返回与目录结构相同的对象",
   "main": "index.js",
-  "scripts": {
-    "test": "make test"
-  },
   "keywords": [
     "node",
     "require",
@@ -14,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/DavidCai1993/dirRequirer.git"
+    "url": "https://github.com/DavidCai1993/dir-requirer.git"
   },
   "author": "DavidCai1993",
   "license": "MIT",
@@ -22,6 +19,7 @@
     "url": "https://github.com/DavidCai1993/dir-requirer/issues"
   },
   "scripts": {
+    "test": "make test",
     "test-travis": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly"
   },
   "homepage": "https://github.com/DavidCai1993/dir-requirer",
