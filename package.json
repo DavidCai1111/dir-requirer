@@ -1,8 +1,8 @@
 {
   "name": "dir-requirer",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "require指定目录下的所有文件，返回与目录结构相同的对象",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "keywords": [
     "node",
     "require",
