@@ -52,6 +52,7 @@ var dr = require('dir-requirer')(__dirname);
          |-- c.json
 ```	
 
+### var dr = require('dir-requirer')(__dirname);
 ### dr(path,options)
 
 __参数：__
@@ -68,6 +69,7 @@ __options可选属性:__
 ### 例子：
 
 ```js
+var dr = require('dir-requirer')(__dirname);
 var myDir = dr('./dir')
 //myDir对象将会拥有与'./dir'目录相同的结构,可以直接调用 myDir.a (即a.js文件exports出的对象/方法) , 
 //myDir.c , myDir.inner.e , myDir.inner.inner2.d 
