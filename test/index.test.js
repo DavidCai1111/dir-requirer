@@ -58,4 +58,8 @@ describe('test dir-requirer',function(){
 		should(dr('./_test',{ext: ['.js'],dirBlackList : ['_doubleInner'],fileBlackList : ['2.json']})).be.eql(resultExpected);
 		done();
 	});
+	it('test with path which not exists', function (done) {
+		should(dr('./dirWhichNotExists')).be.eql(undefined);
+		done();
+	});
 });
