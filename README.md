@@ -2,7 +2,6 @@
 
 [![Build Status](https://travis-ci.org/DavidCai1993/dir-requirer.svg?branch=master)](https://travis-ci.org/DavidCai1993/dir-requirer)
 [![Coverage Status](https://coveralls.io/repos/DavidCai1993/dir-requirer/badge.svg)](https://coveralls.io/r/DavidCai1993/dir-requirer)
-[![npm](https://img.shields.io/npm/v/npm.svg)]()
 
 ## 用途
 dir-requirer是一个对nodejs自身的require方法的封装，使用它可以直接require一个目录，它会帮助你require指定目录下的
