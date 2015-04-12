@@ -21,7 +21,7 @@ dir-requirer是一个对nodejs自身的require方法的封装，使用它可以�
 ```js
 var dr = require('dir-requirer')(__dirname);
 var myDir = dr('./dir');
-myDir.inner.e(); //调用e.js中exports出的方法/对象,相当于myDir.inner.e = require('./dir/inner/e');
+myDir.inner.e; //e.js中exports出的对象,相当于myDir.inner.e = require('./dir/inner/e');
 cJson = myDir.c;//也可以调用json文件
 ```
 
@@ -69,7 +69,8 @@ __options可选属性:__
 
 ```js
 var dr = require('dir-requirer')(__dirname);
-var myDir = dr('./dir')
+var myDir = dr('./dir');
+//如果'./dir'不存在myDir将为undefined
 //myDir对象将会拥有与'./dir'目录相同的结构,可以直接调用 myDir.a (即a.js文件exports出的对象/方法) , 
 //myDir.c , myDir.inner.e , myDir.inner.inner2.d 
 var myDir = dr('./dir',{ext:['.json']});
