@@ -70,7 +70,7 @@ __options可选属性:__
 ```js
 var dr = require('dir-requirer')(__dirname);
 var myDir = dr('./dir');
-//如果'./dir'不存在myDir将为undefined
+//如果目录'./dir'不存在,myDir将为undefined
 //myDir对象将会拥有与'./dir'目录相同的结构,可以直接调用 myDir.a (即a.js文件exports出的对象/方法) , 
 //myDir.c , myDir.inner.e , myDir.inner.inner2.d 
 var myDir = dr('./dir',{ext:['.json']});
